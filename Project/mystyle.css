@@ -1,0 +1,154 @@
+/*global*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    margin:0;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --primary:rgb(30, 187, 153);
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    /*background-color: red; mobile*/
+}
+
+/* @media(min-width:768px){
+    body{
+        background-color: rgba(176, 196, 222, 0.329);
+    }
+}*/
+
+p{
+    font-size: 1.6rem;
+    margin: 2rem;
+    line: height 2;
+}
+h3{
+    font-size: 2.5rem;
+}
+/*utilities*/
+.center{
+    text-align:center
+}
+.padding{
+    margin: 15px;
+}
+img{
+    max-width: 100%;
+}
+.bold-text{
+    font-weight: 700;
+}
+/* header*/
+.site-header{
+    display:flex;
+    justify-content: space-around;
+    background-color: var(--primary);
+    color:black;
+    height:23vh;
+}
+@media(min-width:768px){
+    .site-header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .site-header h1{
+        font-size:8rem;
+        width: 60rem;
+    }
+}
+.site-header h1{
+    color:black;
+    font-size: 8rem;
+    width:60rem;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 1rem;
+    letter-spacing: 1rem;
+    font-weight: bold;
+}
+.site-header h2{
+    color:white;
+    font-size: 4rem;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 1px black;
+}
+
+.icons-container{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+.icon-container i{
+    color: black;
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+.menu{
+    text-align: center;
+    margin-top: 3rem;
+}
+.menu a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    margin-right: 20px;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 55px;
+}
+.menu a:hover{
+    color: white;
+    background-color: coral;
+    text-decoration: underline;
+}
+
+/*main*/
+.img-container{
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+.img-container img{
+    border-radius: 50%;
+    border: 5px solid rgba(29, 0, 196, 0.603);
+    padding: .5rem;
+}
+.site-footer{
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+    text-align: center;
+}
+.site-footer .icons-container a i{
+    color: white;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.flex-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    justify-content: space-between;
+}
+
+/* Living*/
+header.second-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    height: 5vh;
+}
+header.second-header h1{
+    font-size: 4rem;
+    padding: 0%;
+}
